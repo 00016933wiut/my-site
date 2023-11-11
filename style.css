@@ -87,3 +87,17 @@ a:first-child{
 .card:nth-child(even) {
     flex-direction: row-reverse;
 }
+.topText{
+    text-align: center;
+}
+
+.bio img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+figcaption{
+    text-align: center;
+}
