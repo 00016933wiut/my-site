@@ -90,8 +90,7 @@ a:first-child {
     flex-direction: row-reverse;
 }
 
-.topText,
-.figcaption {
+.topText, .figcaption {
     text-align: center;
 }
 
