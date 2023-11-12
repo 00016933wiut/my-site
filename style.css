@@ -37,7 +37,7 @@ main {
 @media screen and (max-width: 600px) {
     .list_of_pets li {
         flex-basis: 35%;
-    }j
+    }
 }
 
 .menu {
