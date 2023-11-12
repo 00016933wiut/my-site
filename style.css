@@ -101,3 +101,30 @@ a:first-child{
 figcaption{
     text-align: center;
 }
+
+
+.carousel-container {
+    overflow: hidden;
+    width: 60%; /* Adjust the width as needed */
+    margin: auto;
+}
+
+.carousel-slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+    flex: 0 0 20%; /* Adjust the percentage to control the number of visible slides */
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+button {
+    margin-top: 10px;
+    cursor: pointer;
+}
