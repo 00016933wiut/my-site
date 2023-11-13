@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const nextBtn = document.getElementById('nextBtn');
 
     let currentIndex = 0;
-    const itemsVisible = 3; // Adjust the number of visible items
+    const itemsVisible = 3; 
 
     function showSlide(index) {
         slidesContainer.style.transform = `translateX(${(100 / itemsVisible) * -index}%)`;
@@ -24,7 +24,4 @@ document.addEventListener('DOMContentLoaded', function () {
 
     nextBtn.addEventListener('click', nextSlide);
     prevBtn.addEventListener('click', prevSlide);
-
-    // Optional: Auto-advance the carousel every few seconds
-    // setInterval(nextSlide, 5000);
 });

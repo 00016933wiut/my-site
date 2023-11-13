@@ -131,3 +131,11 @@ button {
     margin-top: 10px;
     cursor: pointer;
 }
+
+.help-adress{
+    display: flex;
+    justify-content: space-between;
+}
+.help-adress iframe{
+    margin-right: 15px;
+}
