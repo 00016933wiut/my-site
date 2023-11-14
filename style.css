@@ -139,3 +139,87 @@ button {
 .help-adress iframe{
     margin-right: 15px;
 }
+
+.menu {
+    max-height: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+a:first-child {
+    margin-right: auto;
+}
+
+.logo {
+    height: 5vh;
+    max-width: 100%;
+}
+main {
+    margin: 0 25%;
+}
+.who-are-we{
+    width: 100%;
+    position: relative;
+    display: inline-block;
+}
+.who-are-we img{
+    border: dashed red;
+    padding: 5px;
+    width: 75%;
+    height: auto;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+.about-me-container{
+    position: absolute;
+    background-color: aliceblue;
+    width: 75%;
+    max-height: 80%;
+    top: 50%; 
+    left: 105%; 
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    text-align:justify; 
+    border: 2px solid red;
+    padding: 10px;
+    box-sizing: border-box;
+}
+form {
+    max-width: 500px;
+    margin: auto;
+}
+label, input, textarea {
+    display: block;
+    margin-bottom: 10px;
+}
+textarea {
+    resize: vertical;
+    height: 100px;
+}
+button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #45a049;
+}
+.questions, .social_sites{
+    display: flex;
+    justify-content: space-between;
+}
+.right_side{
+
+    margin-right: 20px;
+}

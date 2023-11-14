@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mehr va oqibat | Donations</title>
-    <link rel="stylesheet" href="https://00016933wiut.github.io/my-site/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mehr va oqibat</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    </head>
+
     <body>
         <header>
             <nav class="menu">
-                <a href="https://00016933wiut.github.io/my-site/index.html">Homepage</a>
+                <a href="https://00016933wiut.github.io/my-site/index.html"><img src="mehr va oqibat.png" alt="Mehr va oqibat" class="logo"></a>
                 <a href="https://00016933wiut.github.io/my-site/pages/Pets.html">Pets</a>
                 <a href="https://00016933wiut.github.io/my-site/pages/Sponsors.html">Sponsors</a>
                 <a href="https://00016933wiut.github.io/my-site/pages/Donations.html">Donation</a>
@@ -21,41 +22,73 @@
         </header>
 
         <main>
+            <h1>Who are we?</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ipsum consequatur omnis nihil! Asperiores ratione ipsa adipisci iusto deserunt tenetur aspernatur eveniet quam blanditiis, commodi accusamus impedit ad quis? Fugit?</p>
 
-            <div class="help-money">
-                <h1>Help us with money</h1>
-                <input type="number" name="money" id="example">
-                <p>This sum will help us buy <strong id="number-of-pet-food">000</strong> kg of pet food</p>
-                <button class="donate">Donate</button>
-            </div>
-            
-
-            <hr>
-
-            <div class="help-items">
-                <h1>Provide us with neccesities</h1>
-                <div class="help-adress">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2997.870889554931!2d69.22235167016241!3d41.289914327043405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b78f5b11535%3A0xfca86f1a37616a2c!2sBaxtini%20uyi!5e0!3m2!1sen!2s!4v1699874250870!5m2!1sen!2s" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-                    <p>We always need matresess, blankets and bowls. We will appreciate you giving these items for us if you have any spare for us <br>You can send them to this address, beforehandedly alerting us, or you can come yourself and see the conditions our furry friends are living in</p>   
+            <div class="who-are-we">
+                <div class="image-container">
+                    <img src="https://00016933wiut.github.io/my-site/pages/pics/Benny.png" alt="me">
+                    <div class="about-me-container">
+                        <p>Lorem ipsum dolor adipisicing elit. Molestiae blanditiis deleniti quidem voluptas, labore voluptatem voluptates tempore! Placeat, error! Itaque exercitationem temporibus aspernatur voluptatibus accusantium ut quasi eos quas dolorum.</p>
+                    </div>
                 </div>
             </div>
-
             <hr>
+            <h1>You have questions?</h1>
+            <div class="questions">
+                <div class="right_side">
+                    <form id="contactForm">
+                        <label>First Name:</label>
+                        <input type="text" id="firstName">
+                
+                        <label>Last Name:</label>
+                        <input type="text" id="lastName">
 
-            <div class="help-stray-pets">
-                <h1>Sterilise the stray pets</h1>
-                <p>You also can help us with sterilising stray pets living in your hood</p>
-                <p>Is the safest and helthies way to restrict the population of them</p>
-
+                        <label>Email:</label>
+                        <input type="email" id="email">
+                
+                        <label>Message:</label>
+                        <textarea id="message"></textarea>
+                
+                        <button type="button" onclick="submitForm()">Send</button>
+                    </form>                
+                    <script>
+                            function submitForm() {
+                            var f_name = document.getElementById('firstName');
+                            var l_name = document.getElementById('lastName');
+                            var user_email = document.getElementById('email');
+                            var message = document.getElementById('message');
+                                if(f_name.value ==='' || l_name.value==='' || user_email.value==='' || message.value===''){
+                                    alert(f_name,l_name,user_email,message);
+                                    alert("fill all fields!");
+                                }
+                                else{
+                                    alert('Form submitted!');
+                                    f_name.value = '';
+                                    l_name.value = '';
+                                    user_email.value = '';
+                                    message.value = '';
+                                }
+                            }
+                    </script>
+                </div>
+                <div class="left_side">
+                    <div class="top">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2011.9191612351829!2d69.28324163884311!3d41.30646678182247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8ad59297d1cf%3A0xda0402847aed7b96!2sWestminster%20International%20University%20in%20Tashkent!5e0!3m2!1sen!2s!4v1699960653373!5m2!1sen!2s" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="bottom">
+                        <div class="social_sites">
+                            <a href="https://t.me/mehrvaoqibatuz"><img src="https://00016933wiut.github.io/my-site/pages/pics/telegram.svg" alt=""></a>
+                            <a href="http://www.facebook.com/mehrvaoqibatuz/"><img src="https://00016933wiut.github.io/my-site/pages/pics/facebook.svg" alt=""></a>
+                            <a href="http://www.instagram.com/mehrvaoqibatuz?igshid=YmMyMTA2M2Y%3D"><img src="https://00016933wiut.github.io/my-site/pages/pics/instagram.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
             </div>
-
         </main>
 
         <footer>
             <p>Our adress is: улица пушкина, дом колотушкина,<br> Квартира Петрова, спросить Вольнова</p>
         </footer>
-        <script src="https://00016933wiut.github.io/my-site/pages/scripts.js"></script>
-    
     </body>
 </html>
