@@ -48,7 +48,7 @@ main {
     color: black;
     padding: 10px;
 }
-a:first-child {
+.menu a:first-child {
     margin-right: auto;
 }
 .card {
