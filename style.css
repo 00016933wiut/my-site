@@ -2,7 +2,7 @@
     font-family: 'Cinzel', serif;
     font-size: 2vw;
 }
-h1, figcaption,.footer, .topText{
+h1, figcaption,.footer, .topText, .carousel, #contactForm{
     text-align: center;
 }
 body{
@@ -118,6 +118,7 @@ button {
 }
 .logo {
     height: 5vh;
+    width: 5vw;
 }
 .who-are-we{
     width: 100%;
