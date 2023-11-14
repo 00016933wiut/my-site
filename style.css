@@ -166,10 +166,6 @@ button {
 button:hover {
     background-color: #45a049;
 }
-.questions{
-    display: flex;
-    justify-content: space-between;
-}
 .right_side{
     margin-right: 20px;
 }
