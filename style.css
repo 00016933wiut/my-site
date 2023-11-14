@@ -2,7 +2,7 @@
     font-family: 'Cinzel', serif;
     font-size: 2vw;
 }
-h1, figcaption, .topText{
+h1, figcaption,.footer, .topText{
     text-align: center;
 }
 body{
@@ -108,7 +108,6 @@ img {
 }
 button {
     margin-top: 10px;
-    cursor: pointer;
 }
 .help-adress{
     display: flex;
@@ -119,7 +118,6 @@ button {
 }
 .logo {
     height: 5vh;
-    max-width: 100%;
 }
 .who-are-we{
     width: 100%;
@@ -142,11 +140,7 @@ button {
     top: 50%; 
     left: 105%; 
     transform: translate(-50%, -50%);
-    color: black;
-    font-size: 15px;
-    font-weight: bold;
     text-align:justify; 
-    border: 2px solid red;
     padding: 10px;
     box-sizing: border-box;
 }
@@ -172,10 +166,13 @@ button {
 button:hover {
     background-color: #45a049;
 }
-.questions, .social_sites{
+.questions{
     display: flex;
     justify-content: space-between;
 }
 .right_side{
     margin-right: 20px;
+}
+.social_sites{
+    display: flex;
 }
