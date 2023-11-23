@@ -2,16 +2,26 @@
     font-family: 'Cinzel', serif;
     font-size: 2vw;
 }
-h1, figcaption, footer, .topText, .carousel, #contactForm, p{
+
+h1,
+figcaption,
+footer,
+.topText,
+.carousel,
+#contactForm,
+p {
     text-align: center;
     margin: 10px;
 }
-body{
+
+body {
     cursor: url('https://00016933wiut.github.io/my-site/pages/pics/pawCat.svg'), auto;
 }
+
 main {
     margin: 0 20%;
 }
+
 header {
     display: flex;
     justify-content: space-between;
@@ -20,60 +30,75 @@ header {
     padding: 0 20px;
     gap: 2vw;
 }
+
 header h1 {
-    margin: 0; 
+    margin: 0;
 }
+
 header ul {
-    list-style: none; /* Remove default list styles */
+    list-style: none;
+    /* Remove default list styles */
     display: flex;
     gap: 2vw;
     padding: 0;
     margin: 0;
 }
+
 header li {
-    margin: 0; /* Remove default margin for list items */
+    margin: 0;
+    /* Remove default margin for list items */
 }
+
 .menu {
     display: flex;
     gap: 2vw;
     align-items: center;
 }
+
 .menu a {
     text-decoration: none;
     color: black;
     padding: 10px;
 }
+
 .menu a:first-child {
     margin-right: auto;
 }
+
 .menu a:hover {
     background-color: #d3d61d;
     color: white;
 }
+
 .logo {
     padding: 0;
     flex-basis: 30px;
     height: 4vh;
     width: auto;
 }
+
 /* homepage */
 .carousel-container {
     overflow: hidden;
     width: 60%;
     margin: auto;
 }
+
 .carousel-slides {
     display: flex;
     transition: transform 0.5s ease-in-out;
 }
+
 .carousel-slide {
     flex: 0 0 20%;
     box-sizing: border-box;
 }
+
 img {
     width: 100%;
     height: auto;
 }
+
 /* pets page */
 .list_of_pets img {
     align-items: center;
@@ -81,9 +106,11 @@ img {
     max-width: 100%;
     height: auto;
 }
+
 .list_of_pets a {
     margin-bottom: 35px;
 }
+
 .list_of_pets {
     display: flex;
     flex-wrap: wrap;
@@ -91,20 +118,24 @@ img {
     text-align: center;
     list-style: none;
 }
+
 .list_of_pets li {
     flex-basis: 30%;
 }
+
 /*Sponsors page*/
 .box {
     border: 2px solid black;
     border-radius: 20px;
     padding: 20px;
 }
+
 .individuals {
     border: 2px solid red;
     border-radius: 5px;
     text-align: center;
 }
+
 .card {
     display: flex;
     margin: 20px;
@@ -112,12 +143,14 @@ img {
     border-radius: 5px;
     align-items: center;
 }
+
 .card img {
     width: 40%;
     height: 40%;
     margin: 20px;
     object-fit: cover;
 }
+
 .card .text {
     padding: 20px;
     flex: 1;
@@ -125,59 +158,72 @@ img {
     flex-direction: column;
     justify-content: center;
 }
+
 .card:nth-child(even) {
     flex-direction: row-reverse;
 }
+
 /* donations page */
-.donation{
+.donation {
     display: flex;
     align-items: baseline;
 }
-.help-adress{
+
+.help-adress {
     display: flex;
     justify-content: space-between;
 
 }
-.help-adress iframe{
+
+.help-adress iframe {
     margin-right: 15px;
 }
+
 /*About us page*/
-.who-are-we{
+.who-are-we {
     width: 100%;
     position: relative;
     display: inline-block;
 }
-.who-are-we img{
+
+.who-are-we img {
     padding: 5px;
     width: 75%;
     height: auto;
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
 }
-.about-me-container{
+
+.about-me-container {
     position: absolute;
     background-color: aliceblue;
     width: 60%;
     max-height: 80%;
-    top: 50%; 
-    left: 100%; 
+    top: 50%;
+    left: 100%;
     transform: translate(-50%, -50%);
-    text-align:justify; 
+    text-align: justify;
     padding: 10px;
     box-sizing: border-box;
 }
+
 form {
     max-width: 100%;
     margin: auto;
 }
-label, input, textarea {
+
+label,
+input,
+textarea {
     display: block;
     margin-bottom: 10px;
 }
+
 textarea {
     resize: vertical;
     height: 100px;
 }
+
 button {
     margin-top: 10px;
     padding: 10px;
@@ -186,97 +232,126 @@ button {
     border: none;
     cursor: pointer;
 }
+
 button:hover {
     background-color: #45a049;
 }
-.questions{
+
+.questions {
     display: flex;
 }
-.right_side{
+
+.right_side {
     width: 50%;
     margin-right: 20px;
 }
-.left_side{
+
+.left_side {
     margin-left: 10px;
     width: 50%;
 }
-.top{
+
+.top {
     max-height: 95%;
 }
-iframe{
-    width:100%;
+
+iframe {
+    width: 100%;
 }
-.bottom{
+
+.bottom {
     max-height: 5%;
 }
-.social_sites{
+
+.social_sites {
     display: flex;
 }
+
 @media screen and (max-width:500px) {
-    .greeting-photo,.who-are-we{
+
+    .greeting-photo,
+    .who-are-we {
         text-align: center;
     }
-    .main-photo{
-        width:40%;
+
+    .main-photo {
+        width: 40%;
         height: 40%;
         display: inline-block;
     }
-    main, figcaption{
-        margin:0 5%;
+
+    main,
+    figcaption {
+        margin: 0 5%;
     }
+
     .menu {
         display: flex;
         max-height: 5vh;
         padding: 0;
         align-items: center;
     }
-    .menu a, .list_of_pets{
+
+    .menu a,
+    .list_of_pets {
         padding: 0;
     }
+
     .logo {
         flex-basis: 15px;
         height: 3vh;
     }
+
     button {
         width: 25%;
     }
-    .who-are-we img{
+
+    .who-are-we img {
         padding: 5px;
         width: 55%;
         height: auto;
         -webkit-transform: scaleX(-1);
         transform: scaleX(-1);
-    } 
+    }
+
     .about-me-container {
-        width: 90%; 
-        max-height: none; 
+        width: 90%;
+        max-height: none;
         top: auto;
         left: 50%;
-        transform: translate(-50%, 0); 
-        position: relative; 
+        transform: translate(-50%, 0);
+        position: relative;
     }
-    .questions{
+
+    .questions {
         flex-direction: column;
     }
-    .right_side,.left_side{
+
+    .right_side,
+    .left_side {
         margin-left: 0;
         width: 100%;
     }
+
     #contactForm {
         display: flex;
         flex-direction: column;
         max-width: 90%;
-        margin-left: 30px; 
+        margin-left: 30px;
         align-items: center;
     }
-    label, input, textarea {
+
+    label,
+    input,
+    textarea {
         width: 100%;
     }
-    .donation button{
-        height: 12px;}
-    .help-adress{
+
+    .donation button {
+        height: 12px;
+    }
+
+    .help-adress {
         flex-direction: column;
     }
-    
-
 }
