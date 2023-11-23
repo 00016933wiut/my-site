@@ -129,6 +129,10 @@ img {
     flex-direction: row-reverse;
 }
 /* donations page */
+.donation{
+    display: flex;
+    align-items: baseline;
+}
 .help-adress{
     display: flex;
     justify-content: space-between;
@@ -188,12 +192,12 @@ button:hover {
     display: flex;
 }
 .right_side{
-    max-width: 50%;
+    width: 50%;
     margin-right: 20px;
 }
 .left_side{
     margin-left: 10px;
-    max-width: 50%;
+    width: 50%;
 }
 .top{
     max-height: 95%;
@@ -266,5 +270,8 @@ iframe{
     }
     label, input, textarea {
         width: 100%;
+    }
+    .donation button{
+        height: 12px;
     }
 }
