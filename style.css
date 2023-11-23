@@ -208,7 +208,7 @@ iframe{
     display: flex;
 }
 @media screen and (max-width:500px) {
-    .greeting-photo{
+    .greeting-photo,.who-are-we{
         text-align: center;
     }
     .main-photo{
@@ -216,7 +216,7 @@ iframe{
         height: 40%;
         display: inline-block;
     }
-    main{
+    main, figcaption{
         margin:0 5%;
     }
     .menu {
@@ -225,7 +225,7 @@ iframe{
         padding: 0;
         align-items: center;
     }
-    .menu a{
+    .menu a, .list_of_pets{
         padding: 0;
     }
     .logo {
@@ -234,9 +234,6 @@ iframe{
     }
     button {
         width: 25%;
-    }
-    .who-are-we{
-        text-align: center;
     }
     .who-are-we img{
         padding: 5px;
