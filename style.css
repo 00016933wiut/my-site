@@ -143,7 +143,6 @@ img {
     display: inline-block;
 }
 .who-are-we img{
-    border: dashed red;
     padding: 5px;
     width: 75%;
     height: auto;
@@ -153,10 +152,10 @@ img {
 .about-me-container{
     position: absolute;
     background-color: aliceblue;
-    width: 75%;
+    width: 60%;
     max-height: 80%;
     top: 50%; 
-    left: 105%; 
+    left: 100%; 
     transform: translate(-50%, -50%);
     text-align:justify; 
     padding: 10px;
@@ -185,12 +184,15 @@ button {
 button:hover {
     background-color: #45a049;
 }
+.questions{
+    display: flex;
+}
 .right_side{
     max-width: 50%;
     margin-right: 20px;
 }
 .left_side{
-    margin-left: 20px;
+    margin-left: 10px;
     max-width: 50%;
 }
 .top{
@@ -203,9 +205,6 @@ iframe{
     max-height: 5%;
 }
 .social_sites{
-    display: flex;
-}
-.questions{
     display: flex;
 }
 @media screen and (max-width:500px) {
@@ -235,5 +234,40 @@ iframe{
     }
     button {
         width: 25%;
+    }
+    .who-are-we{
+        text-align: center;
+    }
+    .who-are-we img{
+        padding: 5px;
+        width: 55%;
+        height: auto;
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+    } 
+    .about-me-container {
+        width: 90%; 
+        max-height: none; 
+        top: auto;
+        left: 50%;
+        transform: translate(-50%, 0); 
+        position: relative; 
+    }
+    .questions{
+        flex-direction: column;
+    }
+    .right_side,.left_side{
+        margin-left: 0;
+        max-width: 100%;
+    }
+    #contactForm {
+        display: flex;
+        flex-direction: column;
+        max-width: 90%;
+        margin-left: 30px; 
+        align-items: center;
+    }
+    label, input, textarea {
+        width: 100%;
     }
 }

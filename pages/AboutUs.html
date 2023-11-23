@@ -4,12 +4,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Mehr va oqibat</title>
-        <link rel="stylesheet" href="https://00016933wiut.github.io/my-site/style.css">
+        <link rel="stylesheet" href="../style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
     </head>
-
     <body>
         <header>
             <h1><a href="https://00016933wiut.github.io/my-site/index.html"><img src="https://00016933wiut.github.io/my-site/pages/pics/mehr va oqibat.png" alt="Mehr va oqibat" class="logo"></a></h1>
@@ -47,26 +46,8 @@
                         <label>Message:</label>
                         <textarea id="message"></textarea>               
                         <button type="button" onclick="submitForm()">Send</button>
-                    </form>                
-                    <script>
-                            function submitForm() {
-                            var f_name = document.getElementById('firstName');
-                            var l_name = document.getElementById('lastName');
-                            var user_email = document.getElementById('email');
-                            var message = document.getElementById('message');
-                                if(f_name.value ==='' || l_name.value==='' || user_email.value==='' || message.value===''){
-                                    alert(f_name,l_name,user_email,message);
-                                    alert("fill all fields!");
-                                }
-                                else{
-                                    alert('Form submitted!');
-                                    f_name.value = '';
-                                    l_name.value = '';
-                                    user_email.value = '';
-                                    message.value = '';
-                                }
-                            }
-                    </script>
+                    </form>   
+                    <script src="/script.js"></script>
                 </div>
                 <div class="left_side">
                     <div class="top">
@@ -82,7 +63,6 @@
                 </div>
             </div>
         </main>
-
         <footer>
             <p>Our adress is: улица пушкина, дом колотушкина,<br> Квартира Петрова, спросить Вольнова</p>
         </footer>
