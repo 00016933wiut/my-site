@@ -15,7 +15,7 @@ p {
 }
 
 body {
-    cursor: url('https://00016933wiut.github.io/my-site/pages/pics/pawCat.svg'), auto;
+    cursor: url('/pages/pics/pawCat.svg'), auto;
 }
 
 main {
