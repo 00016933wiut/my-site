@@ -136,6 +136,7 @@ img {
 .help-adress{
     display: flex;
     justify-content: space-between;
+
 }
 .help-adress iframe{
     margin-right: 15px;
@@ -259,7 +260,7 @@ iframe{
     }
     .right_side,.left_side{
         margin-left: 0;
-        max-width: 100%;
+        width: 100%;
     }
     #contactForm {
         display: flex;
@@ -272,7 +273,10 @@ iframe{
         width: 100%;
     }
     .donation button{
-        height: 12px;
+        height: 12px;}
+    .help-adress{
+        flex-direction: column;
     }
     
+
 }
